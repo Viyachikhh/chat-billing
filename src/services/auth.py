@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 from uuid import uuid4
 
-from src.api.schemas import * 
+from api.general_schemas import * 
 
 
 class AuthService(BaseAuthService):

@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 
-from src.api.schemas import * 
+from api.general_schemas import * 
 
 
 class OllamaLLMService(LLMService):
