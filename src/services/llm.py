@@ -3,7 +3,15 @@ from langchain_core.messages import AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 
-from api.general_schemas import * 
+from src.services.message import * 
+
+
+class LLMService(ABC):
+
+    @abstractmethod
+    def execute(self, data: QuestionDTO) -> AnswerDTO:
+        raise NotImplementedError
+
 
 
 class OllamaLLMService(LLMService):
